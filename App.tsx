@@ -3,8 +3,11 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <View style={styles.container}> 
+      <Text style= {styles.parent}> Hello ! Đinh Nguyên Chung 
+          <Text style={styles.child}> Wellcom to Android</Text>
+        </Text> 
+      <Text>Hãy cố gắng học thật tốt nhé !</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,4 +20,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  parent: {
+    color: 'red',
+    fontSize: 30,
+    borderWidth: 1,
+    borderColor: 'black',
+    padding: 10,
+    borderRadius: 10,
+    textAlign: 'center',
+  },
+  child: {
+    color: 'blue',
+    fontSize: 20,
+
+  }
 });
